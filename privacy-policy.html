@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — LocalLink Health</title>
+  <link rel="icon" type="image/png" href="/locallink-icon-amber.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,300&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --amber:       #C17B2A;
+      --amber-dark:  #9A6020;
+      --amber-light: #F5E6D0;
+      --amber-pale:  #FDFAF6;
+      --cream:       #FAF7F2;
+      --white:       #ffffff;
+      --text:        #1A1410;
+      --text-mid:    #4A3F35;
+      --text-muted:  #8A7A6A;
+      --border:      #E8DDD0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(250, 247, 242, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .nav-icon {
+      width: 32px; height: 32px;
+      background: var(--amber);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    .nav-name {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--amber);
+    }
+
+    .nav-back {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-mid);
+      text-decoration: none;
+    }
+
+    .nav-back:hover { color: var(--amber); }
+
+    .page-content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 120px 40px 80px;
+    }
+
+    .page-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--amber);
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-top: 40px;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: var(--text-mid);
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      margin: 0 0 16px 0;
+      padding-left: 20px;
+    }
+
+    ul li {
+      font-size: 0.95rem;
+      color: var(--text-mid);
+      line-height: 1.75;
+      margin-bottom: 6px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px;
+      font-size: 0.88rem;
+    }
+
+    th {
+      background: var(--amber-light);
+      color: var(--amber-dark);
+      font-weight: 700;
+      padding: 10px 14px;
+      text-align: left;
+      border: 1px solid var(--border);
+    }
+
+    td {
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      color: var(--text-mid);
+      vertical-align: top;
+    }
+
+    tr:nth-child(even) td { background: var(--amber-pale); }
+
+    .contact-box {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--amber);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-top: 40px;
+    }
+
+    .contact-box h2 { margin-top: 0; }
+
+    footer {
+      background: #0F0D0A;
+      padding: 40px;
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .footer-brand {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--amber);
+      margin-bottom: 12px;
+    }
+
+    .footer-legal {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.3);
+      line-height: 1.8;
+    }
+
+    .footer-legal a {
+      color: rgba(255,255,255,0.4);
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      nav { padding: 16px 20px; }
+      .page-content { padding: 100px 20px 60px; }
+      h1 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-brand">
+      <div class="nav-icon">
+        <svg width="18" height="22" viewBox="0 0 18 22" fill="none">
+          <path d="M9 0C4.58 0 1 3.58 1 8c0 5.5 7.1 12.72 7.4 13.04a.83.83 0 0 0 1.2 0C9.9 20.72 17 13.5 17 8c0-4.42-3.58-8-8-8z" fill="white"/>
+          <circle cx="9" cy="8" r="2.8" fill="#C17B2A"/>
+        </svg>
+      </div>
+      <span class="nav-name">LocalLink</span>
+    </a>
+    <a href="/" class="nav-back">← Back to home</a>
+  </nav>
+
+  <div class="page-content">
+
+    <div class="page-eyebrow">Legal</div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">Last updated: June 2026 &nbsp;·&nbsp; Version 1.1 &nbsp;·&nbsp; LocalLink Health Limited &nbsp;·&nbsp; ICO Registration: ZC163304</div>
+
+    <h2>1. Who We Are</h2>
+    <p>LocalLink Health Limited ('LocalLink', 'we', 'us', 'our') is a company registered in England and Wales (Company No. 17237601). We operate the LocalLink service navigation platform, which helps health, social care, and local authority frontline workers identify appropriate local services for the people they support.</p>
+    <p>We are the data controller for personal data processed in connection with this website and our services.</p>
+    <p>Contact us: <a href="mailto:sam@locallinkhealth.co.uk" style="color:var(--amber);">sam@locallinkhealth.co.uk</a> | <a href="https://www.locallinkhealth.co.uk" style="color:var(--amber);">www.locallinkhealth.co.uk</a></p>
+    <p>ICO Registration Number: ZC163304</p>
+
+    <h2>2. What Data We Collect</h2>
+
+    <h3>2.1 Website visitors (locallinkhealth.co.uk)</h3>
+    <p>When you visit our website we collect:</p>
+    <ul>
+      <li>Usage data via Google Analytics — including pages visited, time on site, device type, and approximate location (city level). This data is anonymised and aggregated.</li>
+      <li>Any information you voluntarily submit via contact forms or enquiry submissions — including your name, email address, job title, and organisation.</li>
+    </ul>
+
+    <h3>2.2 LocalLink tool users</h3>
+    <p>The LocalLink tool is designed to process no personal data. Users are explicitly instructed not to enter names, dates of birth, NHS numbers, or any other identifying details. The tool accepts only general situational descriptions.</p>
+    <p>As an additional safeguard, the tool includes an automated PII detection feature that analyses text entered into the search field in real time. If the system detects patterns consistent with a personal name, NHS number, or date of birth, a warning is displayed prompting the user to remove the identifying information before searching. This detection runs entirely within the user's browser and no data is transmitted as part of this process.</p>
+    <p>We collect the following in connection with tool usage:</p>
+    <ul>
+      <li>Anonymised search query text — the general situation description entered by the worker</li>
+      <li>Names of services returned by the search</li>
+      <li>Search response time and technical status</li>
+      <li>Voluntary feedback ratings and comments submitted by users</li>
+      <li>Names of services for which a referral is logged by the worker</li>
+    </ul>
+    <p>We do not collect names, contact details, or any information that could identify the frontline worker or the person they are supporting when they use the tool.</p>
+
+    <h3>2.3 Partner and pilot organisation contacts</h3>
+    <p>If you are a contact at a partner or pilot organisation, we may hold your name, job title, email address, and telephone number for the purpose of managing our relationship with your organisation.</p>
+
+    <h2>3. How We Use Your Data</h2>
+    <ul>
+      <li>To operate and improve the LocalLink service navigation tool</li>
+      <li>To monitor usage, performance, and quality of service matching</li>
+      <li>To respond to enquiries and manage relationships with partner organisations</li>
+      <li>To analyse website usage and improve our website</li>
+      <li>To comply with our legal and regulatory obligations</li>
+    </ul>
+
+    <h2>4. Legal Basis for Processing</h2>
+    <table>
+      <tr><th>Data Type</th><th>Legal Basis</th><th>UK GDPR Article</th></tr>
+      <tr><td>Anonymised tool usage data</td><td>Legitimate interests</td><td>Article 6(1)(f)</td></tr>
+      <tr><td>Contact enquiries</td><td>Legitimate interests / contract</td><td>Article 6(1)(b)/(f)</td></tr>
+      <tr><td>Website analytics</td><td>Legitimate interests</td><td>Article 6(1)(f)</td></tr>
+      <tr><td>Partner organisation contacts</td><td>Legitimate interests / contract</td><td>Article 6(1)(b)/(f)</td></tr>
+    </table>
+
+    <h2>5. Data Sharing</h2>
+    <p>We do not sell your personal data. We share data only in the following limited circumstances:</p>
+    <ul>
+      <li><strong>Google Analytics</strong> — anonymised website usage data is processed by Google under their data processing terms. Data is aggregated and no individual is identifiable.</li>
+      <li><strong>Anthropic (Claude API)</strong> — search query text from the LocalLink tool is processed transiently by Anthropic to generate service recommendations. No personal data is included in these queries. Anthropic does not use this data to train models.</li>
+      <li><strong>Airtable</strong> — anonymised usage logs and feedback data are stored in Airtable. No personal data relating to tool end-users is stored.</li>
+      <li><strong>Railway</strong> — the LocalLink application is hosted on Railway (EU West). No personal data is stored on Railway infrastructure beyond standard server logs.</li>
+      <li><strong>Legal obligations</strong> — we may share data with law enforcement or regulatory authorities if required by law.</li>
+    </ul>
+
+    <h2>6. International Data Transfers</h2>
+    <p>Some of our service providers are based outside the UK/EEA, including Anthropic (United States) and Google (United States). Where data is transferred internationally we ensure appropriate safeguards are in place, including Standard Contractual Clauses or adequacy decisions as appropriate.</p>
+    <p>Query data processed by Anthropic is transient — it is processed to generate a response and is not stored by Anthropic.</p>
+
+    <h2>7. Data Retention</h2>
+    <ul>
+      <li>Anonymised tool usage logs — retained for 24 months for quality assurance purposes, then deleted</li>
+      <li>Contact enquiry data — retained for 3 years from last contact, then deleted</li>
+      <li>Website analytics — retained in accordance with Google Analytics default retention settings (14 months)</li>
+      <li>Partner organisation contact data — retained for the duration of the relationship plus 3 years</li>
+    </ul>
+
+    <h2>8. Your Rights</h2>
+    <p>Under UK GDPR you have the following rights:</p>
+    <ul>
+      <li><strong>Right of access</strong> — to request a copy of the personal data we hold about you</li>
+      <li><strong>Right to rectification</strong> — to request correction of inaccurate data</li>
+      <li><strong>Right to erasure</strong> — to request deletion of your data in certain circumstances</li>
+      <li><strong>Right to restrict processing</strong> — to request we limit how we use your data</li>
+      <li><strong>Right to data portability</strong> — to receive your data in a portable format</li>
+      <li><strong>Right to object</strong> — to object to processing based on legitimate interests</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at <a href="mailto:sam@locallinkhealth.co.uk" style="color:var(--amber);">sam@locallinkhealth.co.uk</a>. We will respond within 30 days. You also have the right to lodge a complaint with the Information Commissioner's Office (ICO) at <a href="https://ico.org.uk" style="color:var(--amber);">ico.org.uk</a>.</p>
+
+    <h2>9. Cookies</h2>
+    <p>Our website (locallinkhealth.co.uk) uses Google Analytics cookies to understand how visitors use our site. These cookies collect anonymised, aggregated data only. No personally identifying cookies are used.</p>
+    <p>The LocalLink tool does not use cookies beyond those strictly necessary for the tool to function. You can control cookies through your browser settings. Disabling analytics cookies will not affect your ability to use either site.</p>
+
+    <h2>10. Security</h2>
+    <p>We take appropriate technical and organisational measures to protect your data, including:</p>
+    <ul>
+      <li>HTTPS encryption for all data in transit</li>
+      <li>Cloudflare WAF and DDoS protection</li>
+      <li>Access controls limiting who can view usage logs and feedback data</li>
+      <li>Automated PII detection in the tool interface to prevent accidental entry of personal data</li>
+      <li>Regular review of third-party service providers' security practices</li>
+    </ul>
+
+    <h2>11. Children</h2>
+    <p>The LocalLink tool and website are not directed at children under 16. We do not knowingly collect data from children. The tool is intended for use by healthcare and social care professionals only.</p>
+
+    <h2>12. Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. When we make material changes we will update the 'last updated' date at the top of this document and, where appropriate, notify partner organisations directly.</p>
+
+    <div class="contact-box">
+      <h2>13. Contact Us</h2>
+      <p>If you have any questions about this privacy policy or how we handle your data, please contact:</p>
+      <p><strong>Sam Rothwell, Founder</strong><br>
+      LocalLink Health Limited<br>
+      Email: <a href="mailto:sam@locallinkhealth.co.uk" style="color:var(--amber);">sam@locallinkhealth.co.uk</a><br>
+      Website: <a href="https://www.locallinkhealth.co.uk" style="color:var(--amber);">www.locallinkhealth.co.uk</a><br>
+      Company No. 17237601 — Registered in England and Wales</p>
+      <p>You also have the right to complain to the Information Commissioner's Office:<br>
+      ICO — <a href="https://ico.org.uk" style="color:var(--amber);">ico.org.uk</a> | 0303 123 1113</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-brand">LocalLink Health Limited</div>
+    <div class="footer-legal">
+      Registered in England and Wales &nbsp;·&nbsp; Company No. 17237601 &nbsp;·&nbsp; ICO Registration: ZC163304<br>
+      © 2026 LocalLink Health Limited. All rights reserved.<br><br>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+      &nbsp;·&nbsp;
+      <a href="/terms-of-service.html">Terms of Service</a>
+    </div>
+  </footer>
+
+</body>
+</html>
